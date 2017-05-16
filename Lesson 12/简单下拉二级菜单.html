@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+      a {
+  text-decoration: none;
+  display: block;
+  /* width: 150px; */
+  /* line-height: 30px; */
+  /* padding: 10px 0; */
+  color: black;
+  background: transparent;
+}
+ ul {
+   list-style-type: none;
+ }
+.wrapper {
+  margin:0 auto;
+  text-align: center;
+}
+.siteNavigation {
+  /* border: 1px solid #ddd; */
+  display: inline-block;
+  vertical-align: top;
+  /* border-bottom: 1px solid #ddd; */
+  padding-left: 0;
+  
+}
+.siteNavigation>li {
+  float: left;
+  background: white;
+  text-align: center;
+  /* border-right: 1px solid #ddd; */
+  position: relative;
+  margin: 15px;
+  
+}
+.siteNavigation>li>ul {
+  display: none;
+  padding-left: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: white;
+  margin-left: -200%;
+  min-width: 150px;
+}
+.siteNavigation>li>ul>li {
+  padding: 10px;
+}
+.siteNavigation > li:hover > ul {
+  display: block;
+}
+a:hover {
+  border-bottom: 3px solid rgba(0,0,0,.8);
+}
+  </style>
+</head>
+<body>
+  <div class = "wrapper">
+      <ul class = "siteNavigation">
+        <li><a href="#0">课程</a>
+          <ul>
+            <li>视频</li>
+            <li>课件</li>
+            <li>讲师</li>
+            <li>新班</li>
+          </ul>
+        </li>
+        <li><a href="#0">学习</a>
+          <ul>
+            <li>课程介绍</li>
+            <li>调表试听</li>
+          </ul>
+        </li>
+        <li><a href="#0">更多</a>
+          <ul>
+            <li>产品1</li>
+            <li>产品2</li>
+            <li>产品3</li>
+          </ul>
+        </li>
+        <li><a href="#0">直播</a></li>
+      </ul>
+  </div>
+</body>
+</html>
