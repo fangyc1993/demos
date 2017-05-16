@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOMdemo</title>
+</head>
+
+<body>
+    <script src='bom.js'>
+    </script>
+    <button id=button1>open a new window in center</button>
+
+    <script>
+        button1.onclick = function() {
+            let f = 'width=900px,height=600px'
+                //             $.bom.openAtCenter('1018','650','http://www.baidu.com')
+            $.bom.openAtCenter(900, 800, 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript')
+        }
+    </script>
+
+    <script>
+        document.write('<br>')
+        document.write('随机数:')
+        document.write(Math.random())
+    </script>
+</body>
+
+</html>
