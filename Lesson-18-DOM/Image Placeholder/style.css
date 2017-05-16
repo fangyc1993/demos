@@ -1,0 +1,8 @@
+.imagewraper{
+  text-align: center; 
+  line-height: 278px;
+}
+
+img {
+   border: 1px solid red;
+}
