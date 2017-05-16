@@ -28,7 +28,7 @@
     var page = 1
     btn.onclick = function(){
         var request = new XMLHttpRequest();
-        request.open('GET','https://gl09025.github.io/demos/32lesson-ajax/page' + page + '.json')
+        request.open('GET','https://fangyc15.github.io/demos/page' + page + '.json')
         request.onload = function(){
             page += 1
             var object = JSON.parse(request.responseText)
