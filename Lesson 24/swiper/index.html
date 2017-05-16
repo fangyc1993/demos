@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>swiper demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 100px;
+        }
+        
+        .slides {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .view {
+            height: 100%;
+            background: #ddd;
+            display: flex;
+            transition: transform 1s;
+        }
+        
+        .slide {
+            height: 100%;
+            box-sizing: border-box;
+            width: 100%;
+            flex-shrink: 0;
+        }
+        
+        .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            font-size: 14px;
+            color: #000;
+        }
+        
+        .swiper-pagination-bullet {
+            margin: 0 5px;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #ddd;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #007aff;
+        }
+        /*使用者写的CSS*/
+        
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10em;
+        }
+        
+        .slide {
+            background: #aaa;
+        }
+        
+        .slide:nth-child(2) {
+            background: #ccc;
+        }
+        
+        .slide:nth-child(3) {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides">
+        <div class="view">
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./swiper.js"></script>
+
+    <script>
+        //用户调用
+        slides(document.querySelector('.slides'))
+    </script>
+</body>
+
+</html>
