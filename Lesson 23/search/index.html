@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOMdemo</title>
+
+</head>
+
+<body>
+    <span>name:</span><input type="text">
+    <span>value:</span><input type="text">
+
+    <br>
+    <button id='button1'>set search</button>
+    <br>
+    <button id='button2'>getLocationSearch</button>
+
+    <script>
+        // button1.onclick = function() {
+        //     let f = 'width=900px,height=600px'
+        //         //             $.bom.openAtCenter('1018','650','http://www.baidu.com')
+        //         //             $.bom.openAtCenter(300,300,'iframe.html')
+        //         // $.bom.search('a')
+        //         // $.bom.search('a', 'ggg')
+        //         //                console.log($.bom.search('a','frank'))
+        // }
+        button2.onclick = function() {
+            alert($.bom.search('a'))
+        }
+    </script>
+
+    <script>
+        document.write('<br>')
+        document.write('随机数:')
+        document.write(Math.random())
+    </script>
+    <script src='bom.js'></script>
+</body>
+
+</html>
