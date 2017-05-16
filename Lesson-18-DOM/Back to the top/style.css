@@ -1,0 +1,47 @@
+.main{
+    background-color: #fff;
+    font-size: 16px;
+    font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    margin-right: 50px;
+}
+.preface{
+    background-color: #EFEFEF;
+}
+img{
+
+}
+p{}
+.style{
+    background-color: #EFEFEF;
+    color: rgb(160, 160, 160);
+}
+.biaoti2{
+    border-left: 10px solid;
+    border-left-color: rgb(255, 128, 36);
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    color: #3e3e3e;
+    font-size: 16px;
+}
+
+.qianyan{
+    color: #FF8024;
+}
+
+button{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    max-width: 40px;
+    background: none repeat scroll 0 0 #336699;
+    border: 1px solid #CCCCCC;   
+    border-radius: 3px;   
+    -webkit-border-radius: 3px; 
+    color: #EFEFEF;    
+    font-size: 14px;    
+    padding: 5px;   
+    text-decoration: none;    
+    text-shadow: 0 1px 0 #999;    
+    -webkit-text-shadow: 0 1px 0 #999;
+}
