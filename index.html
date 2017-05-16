@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX-Demo</title>
+    <style>
+        ol{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1189px;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            width: 297px;
+        }
+    </style>
+</head>
+<body>
+    <ol id="container"></ol>
+    <button id="btn">加载图片</button>
+</body>
+
+<script>
+    var page = 1
+    btn.onclick = function(){
+        var request = new XMLHttpRequest();
+        request.open('GET','https://gl09025.github.io/demos/32lesson-ajax/page' + page + '.json')
+        request.onload = function(){
+            page += 1
+            var object = JSON.parse(request.responseText)
+            let hasNextPage = object.hasNextPage
+            let array = object.items            
+            if (!hasNextPage){
+                btn.disabled = true
+            }
+            array.forEach(function(item,index){
+                let li = document.createElement('li')
+                let img = document.createElement('img')
+                li.appendChild(img)
+                img.src = item.url
+                container.appendChild(li)
+            })
+            
+        }
+        request.send()
+    }
+</script>
+</html>
