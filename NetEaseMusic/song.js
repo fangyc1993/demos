@@ -26,7 +26,7 @@ $(function () {
 
 
     let audio = document.createElement('audio')'
-    audio.src = 'http://122.138.54.115/m10.music.126.net/20170623184755/c207c799516175d6771834c100d237b2/ymusic/9313/cfac/35ad/332d8257716efd86d075809e61cfd5d5.mp3?wshc_tag=0&wsts_tag=594cec37&wsid_tag=318cbd68&wsiphost=ipdbm'
+    audio.src = 'http://122.138.54.115/m10.music.126.net/20170623184755/c207c799516175d6771834c100d237b2/ymusic/9313/cfac/35ad/332d8257716efd86d075809e61cfd5d5.mp3'
 
     audio.oncanplay = function () {
         audio.play()
